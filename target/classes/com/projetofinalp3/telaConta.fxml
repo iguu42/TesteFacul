@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetofinalp3.Controller.TelaContaController">
+   <top>
+      <AnchorPane prefHeight="137.0" prefWidth="520.0" style="-fx-background-color: #38f094;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="243.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conta Corrente" wrappingWidth="186.9580078125">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Label fx:id="NameFieldText" layoutX="46.0" layoutY="40.0" prefHeight="51.0" prefWidth="173.0" textFill="#f8f8f8">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="SaldoLabelField" layoutX="243.0" layoutY="65.0" prefHeight="32.0" prefWidth="212.0" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="329.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="79.0" layoutY="52.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="129.0" style="-fx-background-color: #38f094;" text="Transferência" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="298.0" layoutY="52.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="129.0" style="-fx-background-color: #38f094;" text="Poupança" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="79.0" layoutY="113.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="129.0" style="-fx-background-color: #38f094;" text="Sacar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="298.0" layoutY="113.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="129.0" style="-fx-background-color: #38f094;" text="Depósito" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="sairButton1" layoutX="208.0" layoutY="196.0" mnemonicParsing="false" onAction="#sairButton1OnAction" prefHeight="18.0" prefWidth="59.0" style="-fx-background-color: #38f094;" text="Sair" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

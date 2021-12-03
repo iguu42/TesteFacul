@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetofinalp3.Controller.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logoImageView" fitHeight="227.0" fitWidth="216.0" layoutX="7.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Image/verde.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="lockImageView" fitHeight="73.0" fitWidth="67.0" layoutX="113.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Image/2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="37.0" layoutY="156.0" text="CPF" textFill="#616161">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="loginTextField" layoutX="73.0" layoutY="153.0" prefHeight="26.0" prefWidth="173.0" />
+            <Label layoutX="30.0" layoutY="203.0" text="Senha" textFill="#616161">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="senhaTextField" layoutX="73.0" layoutY="199.0" prefHeight="28.0" prefWidth="173.0" />
+            <Button fx:id="loginButton" layoutX="86.0" layoutY="268.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="122.0" style="-fx-background-color: #38f094;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="sairButton" layoutX="104.0" layoutY="314.0" mnemonicParsing="false" onAction="#sairButtonOnAction" prefHeight="19.0" prefWidth="87.0" style="-fx-background-color: #38f094;" text="Sair" textFill="WHITE" />
+            <Label fx:id="loginErroLabel" layoutX="48.0" layoutY="236.0" prefHeight="20.0" prefWidth="223.0" textFill="#a4a4a4">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="loginErroLabel1" layoutX="48.0" layoutY="246.0" prefHeight="20.0" prefWidth="223.0" textFill="#a4a4a4">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
